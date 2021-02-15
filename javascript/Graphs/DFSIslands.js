@@ -8,8 +8,8 @@
 var numIslands = function(grid) {
     
     // Current node = (x,y)
-    //Directions: left (x-1,y), right (x+1,y), bottom (x,y-1), top (x,y+1)
-    //Edge cases: x < 0, x > num_cols, y > num_rows, y < 0, empty grid
+    // Directions: left (x-1,y), right (x+1,y), bottom (x,y-1), top (x,y+1)
+    // Edge cases: x < 0, x > num_cols, y > num_rows, y < 0, empty grid
     
     if(!grid || grid.length == 0){
         return 0;
