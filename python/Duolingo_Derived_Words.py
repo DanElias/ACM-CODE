@@ -1,6 +1,6 @@
 import collections
 
-
+# Create an undirected graph adjacency list with derived words. Then run DFS to find number of graphs or "islands"
 class Solution:
     def numberOfDistinctMeanings(self, words):
         words.sort(key=len)
