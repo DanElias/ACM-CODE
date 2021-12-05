@@ -31,19 +31,6 @@ def findEncryptedWord(s):
   return result
   
   
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
 
 # These are the tests we use to determine if the solution is correct.
 # You can add your own at the bottom.
