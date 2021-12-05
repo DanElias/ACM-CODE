@@ -120,4 +120,22 @@ if __name__ == "__main__":
   
 
   # Add your own test cases here
-  
+# Write your code here
+    node = head
+
+    evens = []
+
+    while node is not None:
+        is_even = node.data % 2 == 0
+        if is_even:  # even, start pushing
+            evens.append(node)
+
+        if not is_even or node.next is None:  # not even, start popping
+            while len(evens) > 1:
+                evens[0].data, evens[-1].data = evens[-1].data, evens[0].data
+                evens.pop(0)
+                evens.pop(-1)
+            evens.clear()
+        node = node.next
+
+    return head
